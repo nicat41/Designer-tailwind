@@ -32,8 +32,17 @@
             "2xl": "1536px",
             // => @media (min-width: 1536px) { ... }
           },
-          colors: {},
-          fontFamily: {},
+          colors: {
+            textcolor: "#F55529",
+            primary: "#F50103",
+          },
+          fontFamily: {
+            Inter: "Inter",
+            OpenSans: "Open Sans",
+            Garamond: "Cormorant Garamond",
+            body: "Lato",
+            WorkSans:"Work Sans",
+          },
           container: {
             center: true,
           },
@@ -41,5 +50,26 @@
       },
     };
   </script>
-  <body></body>
+  <body class="bg-black ">
+    <header class="text-white w-[1200px] container font-body pt-[50px]">
+      <div class="flex justify-between py-[7px] items-center">
+        <div class="flex space-x-[8px] items-center">
+         <figure class="w-[28px] h-[28px] ">
+          <img class="w-full h-full object-cover" src="./imges/logo.svg" alt="logo">
+         </figure>
+         <p class="text-textcolor leading-[24px] font-bold text-[24px] font-WorkSans">Warkinon</p>
+        </div>
+        <nav class="flex space-x-[35px]  ">
+          <a class="text-textcolor text-[18px] leading-[28px] font-medium font-WorkSans text-decoration-line  underline underline-[50px] underline-offset-[3px] " href="#">Home</a>
+          <a class="text-[18px] leading-[28px] font-normal font-Inter" href="#">Case Studies</a>
+          <a class="text-[18px] leading-[28px] font-normal font-Inter" href="#">Blog</a>
+          <a class="text-[18px] leading-[28px] font-normal font-Inter" href="#">Services</a>
+          <a class="text-[18px] leading-[28px] font-normal font-Inter" href="#">Contact</a>
+        </nav>
+        <button class="py-[8px] px-[20px] bg-primary rounded-[5px] font-medium leading-[26px] font-WorkSans">
+          Contact
+        </button>
+      </div>
+    </header>
+  </body>
 </html>
